@@ -7,13 +7,11 @@
 <!-- SCRIPT -->
 <script>
 import Component1 from '@/components/Component1';
-import Component2 from '@/components/Component2';
 
 export default {
   name: 'App',
   components: {
     Component1,
-    Component2
   }
 }
 </script>

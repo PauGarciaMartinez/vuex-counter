@@ -1,16 +1,16 @@
 <!-- TEMPLATE -->
 <template>
-  <Component2 />
+  <Counter />
 </template>
 
 <!-- SCRIPT -->
 <script>
-import Component2 from '@/components/Component2';
+import Counter from '@/components/Counter';
 
 export default {
-  name: 'Component1',
+  name: 'Component4',
   components: {
-    Component2
+    Counter
   }
 }
 </script>
