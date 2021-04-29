@@ -2,16 +2,16 @@
 <template>
   <h1>Vuex Counter</h1>
   <h2 class="counter">{{ counter }}</h2>
-  <button>-</button>
+  <button @click="subtractFromCounter(value)">-</button>
   <input 
     type="number"
     v-model="value">
-  <button>+</button>
+  <button @click="addToCounter(parseInt(value))">+</button>
 </template>
 
 <!-- SCRIPT -->
 <script>
-import { mapState } from 'vuex';
+import { mapState, mapMutations } from 'vuex';
 
 export default {
   name: 'Counter',
@@ -22,6 +22,9 @@ export default {
   },
   computed: {
     ...mapState(['counter'])
+  },
+  methods: {
+    ...mapMutations(['addToCounter', 'subtractFromCounter'])
   }
 }
 </script>
